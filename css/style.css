@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -64,7 +64,7 @@ h2 {
 
 h3 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 300;
   margin: 15px 0 15px 0;
   color: #124265;
   font-family: var(--heading-font);
@@ -76,17 +76,18 @@ h3 {
   vertical-align: middle;
   width: auto;
   margin: 0;
-  font-size: 15px;
-  line-height: 2em;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 400;
   text-transform: uppercase;
   outline: 0;
-  border-radius: 0;
+  border-radius: 50px;
   margin: 20px 0 0 0;
-  padding: 8px 20px;
-  background-color: #ff0e48;
-  border: 1px solid #ff0e48;
-  color: #fff;
+  padding: 10px 18px;
+  /* background-color: #ff0e48;
+  border: 1px solid #ff0e48; */
+  /* background-color: #2487ce; */
+  border: 1px solid #2487ce;
+  color: #2487ce;
   transition: all 0.3s ease-in-out;
 }
 
@@ -107,6 +108,7 @@ h3 {
 }
 
 .main-btn:not(.custom-btn-hover-color):hover {
+  background: #2487ce;
   color: #fff !important;
 }
 
@@ -115,7 +117,7 @@ h3 {
 }
 
 .main-btn i {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 0;
   transition: 0.3s;
 }
@@ -127,16 +129,18 @@ h3 {
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 38px;
+  font-weight: 300;
   margin-bottom: 15px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #124265;
   font-family: var(--heading-font);
 }
 
 .section-title p {
   margin-bottom: 0;
+  /* font-weight: 300; */
+  color: #555555;
 }
 
 section .container {
@@ -148,7 +152,7 @@ section .container {
 }
 
 .top-bar {
-  background: #eaf6ff;
+  background: #ddf4ff;
   top: 0;
   left: 0;
   position: relative;
@@ -284,7 +288,7 @@ header {
   line-height: 3.5rem;
   color: #124265;
   padding: 0 0.8rem;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -293,7 +297,7 @@ header {
   transition: 0.5s;
 }
 
-.nav-link > a:hover{
+.nav-link > a:hover {
   color: #2487ce;
 }
 
@@ -591,7 +595,7 @@ header {
   }
 
   .dropdown-link:first-child:hover ~ .arrow {
-    background-color: var(--clr-nav-hover);
+    background-color: #d8e0e6;
   }
 
   .nav-link > a > i {
@@ -677,6 +681,17 @@ header {
   position: relative;
 }
 
+/* .overlay:after {
+  content: '';
+  background: rgba(27, 40, 53, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+} */
+
 .banner-bg h1 {
   font-size: 70px;
   text-transform: capitalize;
@@ -730,7 +745,7 @@ header {
   bottom: 0 !important;
   transform: translate(0%, 20%) !important;
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .banner-text p {
@@ -787,7 +802,7 @@ section.feature-section {
 
 .feature-box h3 {
   line-height: 30px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 15px;
   font-size: 18px;
   color: #14496f;
@@ -855,6 +870,7 @@ section.feature-section {
 
 .about-title .section-title p {
   margin-bottom: 0;
+  color: #555555;
 }
 
 /* .about-title h2 span {
@@ -943,6 +959,10 @@ section.services {
 
 .services .service-box:hover {
   box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+.service-box h3{
+  font-weight: 600;
 }
 
 .services .service-box p {
@@ -1142,21 +1162,21 @@ section.services {
   display: block;
 } */
 
-.team-section{
+.team-section {
   background: #f6fafd;
   overflow: clip;
 }
 
-.bg-overlay{
+.bg-overlay {
   width: 100%;
-    height: 100%;
-    position: absolute;
-    background: #00000070;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
+  height: 100%;
+  position: absolute;
+  background: #00000070;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .team-section .team-member {
@@ -1189,10 +1209,8 @@ section.services {
 }
 
 .team-section .team-member .social a {
-  background: 
-color-mix(in srgb, #ffffff, transparent 25%);
-  color: 
-color-mix(in srgb, #444444, transparent 20%);
+  background: color-mix(in srgb, #ffffff, transparent 25%);
+  color: color-mix(in srgb, #444444, transparent 20%);
   margin: 0 3px;
   border-radius: 4px;
   width: 36px;
@@ -1213,7 +1231,7 @@ color-mix(in srgb, #444444, transparent 20%);
 }
 
 .team-section .team-member .team-info h4 {
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 5px;
   font-size: 18px;
   color: #124265;
@@ -1224,8 +1242,7 @@ color-mix(in srgb, #444444, transparent 20%);
   display: block;
   font-size: 13px;
   font-weight: 400;
-  color: 
-color-mix(in srgb, #444444, transparent 40%);
+  color: color-mix(in srgb, #444444, transparent 40%);
 }
 
 .team-section .team-member:hover .social {
@@ -1287,7 +1304,7 @@ color-mix(in srgb, #444444, transparent 40%);
 
 /* Admission CSS */
 .breadcrumbs {
-  margin-top: 70px;
+  /* margin-top: 70px; */
   padding: 30px 0;
   background-color: #f3f8fa;
   min-height: 40px;
@@ -1639,9 +1656,9 @@ color-mix(in srgb, #444444, transparent 40%);
   display: flex;
   align-items: center;
   border-radius: 50%;
-  background-color: #e5e5e5;
+  background-color: #efefe3;
   /* background-color: #e5e5b2; */
-  border: 3px solid #de2322;
+  border: 3px solid #ffffff;
   box-shadow: 0 0 10px 7px rgb(0 0 0 / 3%);
   height: 100px;
   width: 100px;
@@ -1666,7 +1683,7 @@ color-mix(in srgb, #444444, transparent 40%);
 
 .why-box h5 {
   display: initial;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   color: #0d2735;
   font-size: 24px;
@@ -1795,10 +1812,10 @@ color-mix(in srgb, #444444, transparent 40%);
 
 .span_1 h2 {
   height: 45px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 14px 10px 10px 10px;
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 16px;
   background-color: #b52733;
   color: #ffffff;
   border-right: 5px solid #f16a6f;
@@ -1865,10 +1882,10 @@ marquee {
 
 .span_2 h2 {
   height: 45px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 14px 10px 10px 10px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   background-color: #b52733;
   color: #ffffff;
   border-right: 5px solid #f16a6f;
@@ -2379,11 +2396,14 @@ h1 {
 
 .footer-top h4 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   color: #ffffff;
   position: relative;
-  text-transform: uppercase;
-  padding: 0 0 14px;
+  text-transform: capitalize;
+  /* padding: 0 0 14px; */
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 10px;
 }
 
 .footer-top .footer-contact p {
@@ -2568,7 +2588,6 @@ h1 {
 
   .service-box p {
     font-size: 14px;
-    padding: 10px;
   }
 
   .span_1 {
@@ -2650,8 +2669,18 @@ h1 {
     height: 48px;
   } */
 
-  header {
-    padding: 5px 0;
+  section.feature-section,
+  .about-section,
+  section.services,
+  .block,
+  section.team-section,
+  .why-gyanacademy,
+  .get-section {
+    padding: 30px 0;
+  }
+
+  .section-title {
+    padding-bottom: 30px;
   }
 
   .carousel.slide .carousel-caption {
@@ -2672,11 +2701,11 @@ h1 {
 
   .feature-box:hover {
     transform: none;
-}
+  }
 
-.feature-box i {
-  margin-bottom: 0px;
-}
+  .feature-box i {
+    margin-bottom: 0px;
+  }
 
   .feature-box h3 {
     font-size: 18px;
@@ -2687,29 +2716,8 @@ h1 {
     font-size: 15px;
   }
 
-  section.feature-section {
-    padding-bottom: 30px;
-    padding-top: 30px;
-  }
-
-  .about-section,
-  .contact,
-  .advance-section {
-    padding: 30px 0px;
-  }
-
-  .service-grid {
-    margin-top: 0rem !important;
-    padding-top: 1.5rem !important;
-  }
-
   .about-title {
     margin-left: 0px;
-  }
-
-  .service-box h3 {
-    margin: 10px 0px 10px;
-    font-size: 20px;
   }
 
   .about-title h2 {
@@ -2717,12 +2725,13 @@ h1 {
   }
 
   .section-title h2 {
-    font-size: 28px;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 
   .main-btn {
     font-size: 12px;
-    padding: 5px 15px;
+    padding: 8px 15px;
   }
 
   .main-btn i {
@@ -2737,10 +2746,6 @@ h1 {
     text-align: left;
   }
 
-  section.services {
-    padding: 30px 0px 0px;
-  }
-
   .block .section-title {
     margin-bottom: 10px;
   }
@@ -2748,12 +2753,6 @@ h1 {
   .service-box {
     margin: 0 0 20px 0;
     min-height: 0;
-  }
-
-  section.team-section {
-    padding-bottom: 0 !important;
-    padding: 30px 0px;
-    margin-top: 20px;
   }
 
   .span_1 {
@@ -2811,39 +2810,12 @@ h1 {
     width: 150px;
   }
 
-  .why-gyanacademy {
-    padding-bottom: 30px;
-    padding-top: 30px;
-  }
-
-  .why-gyanacademy h2 {
-    font-size: 24px;
-  }
-
-  .why-gyanacademy h2 {
-    margin-bottom: 20px;
-  }
-
-  .why-gyanacademy .why-box .why-icon {
-    height: 90px;
-    width: 90px;
-  }
-
-  .why-box h5 {
-    font-size: 20px;
-  }
-
-  .get-section {
-    padding: 50px 0px;
-    text-align: center;
-  }
-
   .faq h2 {
     font-size: 24px;
   }
 
   .breadcrumbs {
-    margin-top: 48px;
+    padding: 20px 0;
   }
 
   .breadcrumbs h2 {
@@ -3079,20 +3051,6 @@ h1 {
   /* .banner-section {
     height: 78px;
   } */
-
-  .register-sec {
-    padding: 30px 0;
-  }
-
-  .breadcrumbs {
-    margin-top: 48px;
-  }
-  .advance-section,
-  .about-us,
-  .study-section,
-  .our-gallery {
-    padding: 30px 0;
-  }
 
   .advance-section .col-md-6 {
     margin-bottom: 14px;
